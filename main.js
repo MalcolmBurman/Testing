@@ -107,7 +107,7 @@ document.addEventListener('wheel', function(event) {
 const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
 const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.8, 0.1, 0.05);
-composer.addPass(bloomPass);
+//composer.addPass(bloomPass);
 
 scene.fog = new THREE.FogExp2(0x000000, 0.3);
 
