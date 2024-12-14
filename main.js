@@ -124,7 +124,7 @@ document.addEventListener('mousemove', function(event) {
 
   //Animate
 function animate(t = 0){
-    requestAnimationFrame(animate);
+    //requestAnimationFrame(animate);
     camera.lookAt(scene.position);
     animateHemiLight(t*0.0001);
     if (check) {
@@ -172,7 +172,7 @@ function animate(t = 0){
     //controls.update();
 
 }
-animate();
+renderer.setAnimationLoop(animate);
 
 function morphMeshToVertices(mesh, vertices) {
     const position = mesh.geometry.attributes.position;
