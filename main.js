@@ -167,7 +167,7 @@ function animate(t = 0){
     mesh2.rotation.y = t/3500;
     mesh2.rotation.x = t/3500;
     mesh2.position.y = Math.cos(t*0.0015) / 25;
-    composer.render();
+    renderer.render();
 
     //controls.update();
 
